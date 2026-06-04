@@ -1,0 +1,63 @@
+(DL) rodri-cm@master-node:~/Desktop/UG/7mo semestre/DL/DL_Práctica_05_Equipo_03$ /home/rodri-cm/miniconda3/envs/DL/bin/python "/home/rodri-cm/Desktop/UG/7mo semestre/DL/DL_Práctica_05_Equipo_03/train.py"
+[config] Using device: cuda
+============================================================
+  Dispositivo : cuda
+  Épocas      : 30
+============================================================
+[dataset] imágenes  train=25426  val=3178  test=3179
+[dataset] filas     train=127129  val=15890  test=15895
+[dataset] Vocabulario cargado desde vocab.pkl
+Sin checkpoint previo — entrenando desde cero.
+  train:   0%|                                                    | 0/994 [00:00<?, ?it/s]/home/rodri-cm/miniconda3/envs/DL/lib/python3.10/site-packages/torch/nn/modules/linear.py:125: UserWarning: Attempting to use hipBLASLt on an unsupported architecture! Overriding blas backend to hipblas (Triggered internally at ../aten/src/ATen/Context.cpp:296.)
+  return F.linear(input, self.weight, self.bias)
+Epoch [001/30]  train=4.4386  val=3.7779  lr=4.00e-04  (597.7s)                           
+  ✓ Checkpoint guardado → checkpoints/best.pth
+Epoch [002/30]  train=3.6422  val=3.4694  lr=4.00e-04  (620.0s)                           
+  ✓ Checkpoint guardado → checkpoints/best.pth
+Epoch [003/30]  train=3.4250  val=3.3293  lr=4.00e-04  (619.8s)                           
+  ✓ Checkpoint guardado → checkpoints/best.pth
+Epoch [004/30]  train=3.3017  val=3.2438  lr=4.00e-04  (619.6s)                           
+  ✓ Checkpoint guardado → checkpoints/best.pth
+Epoch [005/30]  train=3.2111  val=3.1807  lr=4.00e-04  (620.1s)                           
+  ✓ Checkpoint guardado → checkpoints/best.pth
+  ✓ Checkpoint guardado → checkpoints/epoch_005.pth
+  📊 Gráfica guardada → checkpoints/training_curves.png
+Epoch [006/30]  train=3.1381  val=3.1390  lr=4.00e-04  (619.8s)                           
+  ✓ Checkpoint guardado → checkpoints/best.pth
+Epoch [007/30]  train=3.0801  val=3.0932  lr=4.00e-04  (617.3s)                           
+  ✓ Checkpoint guardado → checkpoints/best.pth
+Epoch [008/30]  train=3.0323  val=3.0684  lr=4.00e-04  (624.6s)                           
+  ✓ Checkpoint guardado → checkpoints/best.pth
+Epoch [009/30]  train=2.9939  val=3.0360  lr=4.00e-04  (615.4s)                           
+  ✓ Checkpoint guardado → checkpoints/best.pth
+Epoch [010/30]  train=2.9641  val=3.0267  lr=4.00e-04  (616.7s)                           
+  ✓ Checkpoint guardado → checkpoints/best.pth
+  ✓ Checkpoint guardado → checkpoints/epoch_010.pth
+  📊 Gráfica guardada → checkpoints/training_curves.png
+Epoch [011/30]  train=2.9384  val=3.0008  lr=4.00e-04  (619.5s)                           
+  ✓ Checkpoint guardado → checkpoints/best.pth
+Epoch [012/30]  train=2.9185  val=2.9891  lr=4.00e-04  (600.3s)                           
+  ✓ Checkpoint guardado → checkpoints/best.pth
+Epoch [013/30]  train=2.9010  val=2.9818  lr=4.00e-04  (580.1s)                           
+  ✓ Checkpoint guardado → checkpoints/best.pth
+Epoch [014/30]  train=2.8860  val=2.9855  lr=4.00e-04  (598.3s)                           
+Epoch [015/30]  train=2.8735  val=2.9743  lr=4.00e-04  (625.8s)                           
+  ✓ Checkpoint guardado → checkpoints/best.pth
+  ✓ Checkpoint guardado → checkpoints/epoch_015.pth
+  📊 Gráfica guardada → checkpoints/training_curves.png
+Epoch [016/30]  train=2.8610  val=2.9619  lr=4.00e-04  (628.5s)                           
+  ✓ Checkpoint guardado → checkpoints/best.pth
+Epoch [017/30]  train=2.8522  val=2.9595  lr=4.00e-04  (635.0s)                           
+  ✓ Checkpoint guardado → checkpoints/best.pth
+Epoch [018/30]  train=2.8431  val=2.9581  lr=4.00e-04  (628.4s)                           
+  ✓ Checkpoint guardado → checkpoints/best.pth
+Epoch [019/30]  train=2.8345  val=2.9466  lr=4.00e-04  (625.6s)                           
+  ✓ Checkpoint guardado → checkpoints/best.pth
+Epoch [020/30]  train=2.8271  val=2.9485  lr=4.00e-04  (626.2s)                           
+  ✓ Checkpoint guardado → checkpoints/epoch_020.pth
+  📊 Gráfica guardada → checkpoints/training_curves.png
+                                                                                          ^C
+
+Entrenamiento finalizado.
+  Mejor val loss : 2.9466
+  Gráfica        : checkpoints/training_curves.png

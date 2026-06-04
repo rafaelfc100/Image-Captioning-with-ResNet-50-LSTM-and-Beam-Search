@@ -1,0 +1,59 @@
+(DL) rodri-cm@master-node:~/Desktop/UG/7mo semestre/DL/DL_Práctica_05_Equipo_03$ /home/rodri-cm/miniconda3/envs/DL/bin/python "/home/rodri-cm/Desktop/UG/7mo semestre/DL/DL_Práctica_05_Equipo_03/evaluate.py"
+[config] Using device: cuda
+Checkpoint cargado : checkpoints/best.pth
+Vocabulario        : 11420 tokens
+Beam size          : 5 
+
+Generando captions …
+  0%|                                                  | 0/3179 [00:00<?, ?it/s]/home/rodri-cm/miniconda3/envs/DL/lib/python3.10/site-packages/torch/nn/modules/linear.py:125: UserWarning: Attempting to use hipBLASLt on an unsupported architecture! Overriding blas backend to hipblas (Triggered internally at ../aten/src/ATen/Context.cpp:296.)
+  return F.linear(input, self.weight, self.bias)
+100%|███████████████████████████████████████| 3179/3179 [06:38<00:00,  7.98it/s]
+
+============================================
+  BLEU-1 : 0.6386
+  BLEU-2 : 0.4304
+  BLEU-3 : 0.2988
+  BLEU-4 : 0.2035
+============================================
+
+Ejemplos (primeros 8):
+
+  Imagen : 1001896054.jpg
+  Hyp    : two men are working on the side of a truck .
+  Ref[0] : a man with reflective safety clothes and ear protection drives a john deere tractor on a road .
+  Ref[1] : john deere tractors cruises down a street , while the driver wears easy to see clothing .
+
+  Imagen : 1003420127.jpg
+  Hyp    : a woman in a white shirt is sitting at a table .
+  Ref[0] : a group of adults , inside a home , sitting on chairs arranged in a circle , playing a type of musical instruments .
+  Ref[1] : five musicians , a man and four women , practicing sheet music (using flutes ) in a living room .
+
+  Imagen : 1010031975.jpg
+  Hyp    : a group of people are walking down the street .
+  Ref[0] : five men , uniformly dressed in white shirts , tie and black slacks converse at the back of an open van .
+  Ref[1] : small group of 5 white males in white suits hanging out by the back of a van in a parking lot talking .
+
+  Imagen : 101362133.jpg
+  Hyp    : a woman in a red shirt and black pants is performing a martial arts routine .
+  Ref[0] : a young female student performing a downward kick to break a board held by her karate instructor .
+  Ref[1] : girl about to kick a piece of wood in half while karate instructor holds it
+
+  Imagen : 1014785440.jpg
+  Hyp    : a man and a woman are standing on a sidewalk .
+  Ref[0] : two men are carrying children on their backs down the street on a sunny day in a nice neighborhood .
+  Ref[1] : two men , each with a small child on their backs , walk on a paved road .
+
+  Imagen : 1019077836.jpg
+  Hyp    : a brown and white dog is playing with a ball in the grass .
+  Ref[0] : large brown dog running away from the sprinkler in the grass .
+  Ref[1] : a brown dog chases the water from a sprinkler on a lawn .
+
+  Imagen : 1024138940.jpg
+  Hyp    : two dogs play in the snow .
+  Ref[0] : two different breeds of brown and white dogs play on the beach .
+  Ref[1] : two dogs are making a turn on a soft sand beach .
+
+  Imagen : 102520526.jpg
+  Hyp    : a man in a red jacket is walking down the street .
+  Ref[0] : a man in black attire shovels snow into the street , disregarding all public safety .
+  Ref[1] : man in black jacket gray snow cap , shovels snow near a street with cars .
